@@ -3,9 +3,16 @@
 // 'u'.
 function countVowels(str) {
     let count = 0;
-    for (let i = 0; i < str.length; i++) {
-        if ('aeiou'.includes(str[i].toLowerCase())) {
+    let vowels = 'aeiouAEIOU';
+    for (let char of str){
+        if(vowels.includes(char)){
             count++;
+
         }
     }
+
+return count;
+
 }
+
+console.log(countVowels('Hello World, babumoshai'));
