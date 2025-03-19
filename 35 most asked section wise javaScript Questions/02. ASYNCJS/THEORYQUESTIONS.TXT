@@ -1,0 +1,5 @@
+11. What is the difference between setTimeout() and setInterval()?
+ 12. How do JavaScript promises work, and what is the then() method?
+ 13. What is async/await, and how does it simplify asynchronous code in JavaScript?
+ 14. What are the advantages of using async functions over callbacks?
+ 15. How do you handle multiple promises simultaneously?

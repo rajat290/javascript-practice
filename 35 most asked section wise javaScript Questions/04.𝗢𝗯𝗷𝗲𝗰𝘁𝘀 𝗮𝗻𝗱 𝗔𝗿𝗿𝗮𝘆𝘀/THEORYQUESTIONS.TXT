@@ -1,0 +1,5 @@
+21. What is the difference between an object and an array in JavaScript?
+ 22. How do you clone an object or array in JavaScript?
+ 23. What are object methods like Object.keys(), Object.values(), and Object.entries()?
+ 24. How does the map() method work in JavaScript, and when would you use it?
+ 25. What is the difference between map() and forEach() in JavaScript?

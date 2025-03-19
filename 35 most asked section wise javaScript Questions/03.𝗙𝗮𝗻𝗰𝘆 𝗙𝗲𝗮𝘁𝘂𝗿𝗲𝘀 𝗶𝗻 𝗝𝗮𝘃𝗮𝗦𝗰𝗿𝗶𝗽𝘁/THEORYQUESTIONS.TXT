@@ -1,0 +1,5 @@
+ 16. What are higher-order functions in JavaScript, and can you provide an example?
+ 17. What is destructuring in JavaScript, and how is it useful?
+ 18. What are template literals in JavaScript, and how do they work?
+ 19. How does the spread operator work in JavaScript?
+ 20. What is the rest parameter in JavaScript, and how does it differ from the arguments object?

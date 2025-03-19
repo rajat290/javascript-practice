@@ -1,0 +1,5 @@
+31. What is the Document Object Model (DOM), and how does JavaScript interact with it?
+ 32. How do you prevent default actions and stop event propagation in JavaScript?
+ 33. What is the difference between synchronous and asynchronous code in JavaScript?
+ 34. What is the difference between an event object and a custom event in JavaScript?
+ 35. How do you optimize performance in JavaScript applications?

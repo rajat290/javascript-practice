@@ -1,0 +1,5 @@
+26. What is event delegation in JavaScript, and why is it useful?
+ 27. What are JavaScript modules, and how do you import/export them?
+ 28. What is the prototype chain in JavaScript, and how does inheritance work?
+ 29. What is bind(), call(), and apply() in JavaScript, and when do you use them?
+ 30. How does JavaScript handle equality comparisons with == and ===?
