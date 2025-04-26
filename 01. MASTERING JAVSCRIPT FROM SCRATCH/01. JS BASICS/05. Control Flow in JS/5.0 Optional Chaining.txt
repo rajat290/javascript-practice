@@ -1,0 +1,49 @@
+📖 Definition:
+Optional chaining ?. allow karta hai safe access karna nested properties ka bina error aaye.
+
+Agar koi cheez undefined ya null hai to program crash nahi karega — bas undefined return kar dega.
+
+🚀 Syntax
+object?.property
+object?.method?.()
+
+
+🛠 Practical Example
+
+let user = {
+  name: "Ravi",
+  address: {
+    city: "Delhi"
+  }
+};
+
+console.log(user.address?.city);    // Delhi
+console.log(user.address?.pinCode); // undefined (NO ERROR!)
+
+
+Without optional chaining
+console.log(user.address.pinCode); 
+// undefined hoga but error throw karega if address is undefined
+
+
+💡 Real-world use:
+Jab APIs se data aaye aur sure na ho ki data har baar pura hi milega.
+
+Defensive programming ke liye must.
+
+🎯 Interview Tip:
+Optional chaining read-only hoti hai.
+
+Optional chaining likhne ke baad assignment nahi kar sakte!
+
+user.address?.city = "Mumbai"; // ❌ Error in strict mode
+
+
+🧠 FINAL ONE-LINE RECAP:
+
+Concept | Summary
+if-else | Decision based on conditions
+Ternary | if-else ka short version
+&& | Both true needed
+` | 
+Optional Chaining | Safe access to nested properties
