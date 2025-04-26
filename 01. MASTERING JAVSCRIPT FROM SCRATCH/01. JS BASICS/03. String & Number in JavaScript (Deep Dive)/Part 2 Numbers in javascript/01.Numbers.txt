@@ -7,6 +7,9 @@ let a = 42;
 let b = 3.14;
 
 
+🔥 2. Useful Number Methods
+
+
 Method | Example | Use
 toFixed(2) | 3.14159.toFixed(2) → "3.14" | Limit decimal places
 parseInt("42") | Converts string to integer | 
@@ -17,3 +20,24 @@ Math.round() | Math.round(3.6) → 4 | Round to nearest integer
 Math.floor() | Math.floor(3.6) → 3 | Round down
 Math.ceil() | Math.ceil(3.1) → 4 | Round up
 Math.random() | Random number (0 to 1) | 
+
+🧪 3. Practice Task
+
+let price = "99.99";
+let discounted = parseFloat(price) * 0.9;
+console.log(discounted.toFixed(2)); // "89.99"
+
+
+📌 4. Common Interview Confusions
+
+"42" + 1 = "421" (because of string)
+
+42 + "1" = "421" (string wins!)
+
+Use Number("42") or parseInt() to convert to number
+
+
+🧠 5. Recap Line
+Strings help you handle textual data with powerful methods,
+while Numbers manage math and formatting — always watch out for type conversions!
+
