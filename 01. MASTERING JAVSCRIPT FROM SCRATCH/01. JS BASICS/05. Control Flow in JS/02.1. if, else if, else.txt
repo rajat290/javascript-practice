@@ -1,0 +1,19 @@
+🧩 1. if, else if, else
+
+Definition 
+
+if => jab koi condition true ho tab kam karega 
+
+elseif => agar pehli condition false ho jaye to doosri condition check krega.
+
+else => agar sab kuch hi fail kar jaye to fir yeh fallback me chalega ....
+
+syntax 
+
+if (condition ) {
+// if true then do this 
+} else if (anoterCondition) {
+// if 2nd true do this 
+} else {
+// if nothing true then do this 
+}
