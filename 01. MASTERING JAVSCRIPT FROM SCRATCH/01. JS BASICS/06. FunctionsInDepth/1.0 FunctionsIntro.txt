@@ -26,3 +26,27 @@ Yeh hoisting ko support karta hai (aage padhenge iske effects).
 function greet () {
     console.log("Hello World");
 }
+
+
+✅ Function Expression
+📖 Definition:
+Function ko ek variable me store karte hain.
+
+Hoisting nahi hoti isme.
+
+ Syntax
+
+const greet = function() {
+  console.log("Hello World!");
+};
+
+Practical Call
+
+greet();  // Output: Hello World!
+
+
+🎯 Key Difference
+
+Type | Hoisting | Syntax
+Function Declaration | YES | function name() {}
+Function Expression | NO | const name = function() {}
