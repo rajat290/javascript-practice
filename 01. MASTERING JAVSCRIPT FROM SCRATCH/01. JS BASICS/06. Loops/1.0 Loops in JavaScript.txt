@@ -1,0 +1,13 @@
+🧠 Pehle Definition:
+
+Kisi kam ko bar bar repeat karwana jab tak specific task or condition satisfy na ho jaye 
+
+Loop is used to do those kind of task which we want to do repatedly 
+
+Jaise:
+
+Ek list ke sare elements ko print karna
+
+Kisi action ko 5 baar repeat karna
+
+Form ke sare inputs validate karna

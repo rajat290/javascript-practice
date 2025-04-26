@@ -1,0 +1,12 @@
+🚀 1. for loop
+📖 Definition:
+Fixed Repetition ke liye sabse common loop.
+
+Jab pata ho kitni baar chalana hai.
+
+Syntax 
+for (initialization; condition; increment/decrement) {
+    code to run each time 
+
+}
+
