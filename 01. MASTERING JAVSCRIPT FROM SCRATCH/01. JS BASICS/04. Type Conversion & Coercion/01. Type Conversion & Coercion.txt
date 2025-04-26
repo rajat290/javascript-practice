@@ -1,0 +1,85 @@
+💥 Topic 4: Type Conversion & Type Coercion in JavaScript
+
+
+📜 1. Definition
+Type Conversion:
+When we manually changing a value from one data type to another 
+
+Type Coercion:
+Automatically changing the data type by javaScript behind the scenes.
+(JS does this for you... )
+
+
+⚙️ 2. Type Conversion (Manual)
+
+
+➡️ You intentionally convert types using functions.
+
+🔥 Examples
+
+// String to Number
+let num = Number("123");    // 123
+
+// Number to String
+let str = String(123);      // "123"
+
+// Boolean to String
+let boolStr = String(true); // "true"
+
+// String to Boolean
+let bool = Boolean("hello"); // true (non-empty string = true)
+
+// Parse Int/Float
+let intNum = parseInt("123px"); // 123
+let floatNum = parseFloat("12.34"); // 12.34
+
+
+
+🎭 3. Type Coercion (Automatic)
+➡️ JS automatically converts when needed.
+
+console.log('5' + 1); // "51"   (string + number => string)
+console.log('5' - 1); // 4      (string - number => number)
+console.log('5' * 2); // 10     (string * number => number)
+console.log(1 + true); // 2     (true => 1)
+console.log(1 + false); // 1    (false => 0)
+
+✅ Addition (+) prefers String
+✅ Other operators prefer Number
+
+⚠️ 4. Confusing Coercions to Remember
+
+Expression | Result | Reason
+"5" + 2 | "52" | String concatenation
+"5" - 2 | 3 | String coerced to number
+true + false | 1 | true=1, false=0
+null + 1 | 1 | null becomes 0
+undefined + 1 | NaN | undefined can't be converted
+"5" * "2" | 10 | Both strings are coerced to numbers
+
+
+🛠️ 5. Practical Example
+
+Imagine a shopping cart
+
+let quantity = "5";
+let price = 100;
+let total = Number(quantity) * price; 
+console.log(total); // 500
+
+
+If you forget to convert:
+"5" * 100 still works (auto coercion!) — but if it was +?
+"5" + 100 → "5100" (WRONG!)
+
+
+💡 6. Real-life Tip
+When working with user input (forms, APIs),
+always manually convert (Number(), String(), etc.)
+so that you don’t depend on JS's coercion magic — which can be unpredictable!
+
+🧠 7. Quick Recap
+
+Type | Who does it? | Example
+Conversion | You | Number("123")
+Coercion | JavaScript | "5" + 1 → "51"
