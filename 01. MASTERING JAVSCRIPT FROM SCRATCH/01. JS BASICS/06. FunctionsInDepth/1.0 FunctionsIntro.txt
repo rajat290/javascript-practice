@@ -1,0 +1,28 @@
+🔥 Functions in JavaScript (Super Deep Level)
+
+
+
+🧠 Pehle Definition:
+
+Function ek block of code hota hai jo specific task perform karta hai jab usse call kiya jata hai.
+
+A function helps to:
+Reuse code
+Organize logic
+Handle tasks separately
+
+
+
+1️⃣ Function Declaration vs Function Expression
+
+
+✅ Function Declaration
+📖 Definition:
+Function ko directly naam ke saath banate hain.
+
+Yeh hoisting ko support karta hai (aage padhenge iske effects).
+
+
+function greet () {
+    console.log("Hello World");
+}
