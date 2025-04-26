@@ -1,0 +1,22 @@
+🧩 3. Logical Operators (&&, ||)
+
+
+
+&& → pehla false mila to wahi return kar deta hai.
+
+|| → pehla true mila to wahi return kar deta hai.
+
+console.log(0 && "hello"); // Output: 0
+console.log(1 && "hello"); // Output: hello
+
+console.log(0 || "hi");    // Output: hi
+console.log(1 || "hi");    // Output: 1
+
+
+
+📖 Definition:
+Logical Operators kaam karte hai conditions ko combine karne ke liye.
+
+
+Operator | Meaning | Example
+&& | AND (dono true hone chahiye) | true && true = true
