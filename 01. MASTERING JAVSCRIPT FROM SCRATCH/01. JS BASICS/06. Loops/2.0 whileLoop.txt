@@ -1,0 +1,22 @@
+🚀 2. while loop
+📖 Definition:
+Jab tak condition true hai, loop chalta rahega.
+
+Yahan initialization upar ya andar likhna hota hai.
+
+ Syntax
+
+while (condition) {
+  // code to run
+}
+
+⚡ Practical Example
+
+let i = 0;
+while ( i < 5 ) {
+    console.log("Count:", i);
+    i++;
+    }
+
+    🎯 Important Points:
+Pehle condition check hoti hai → true hua to andar jayega.
