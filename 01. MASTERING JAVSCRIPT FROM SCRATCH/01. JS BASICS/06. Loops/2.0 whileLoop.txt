@@ -20,3 +20,56 @@ while ( i < 5 ) {
 
     🎯 Important Points:
 Pehle condition check hoti hai → true hua to andar jayega.
+
+
+
+
+
+
+🚀 3. do...while loop
+📖 Definition:
+Pehle body chalegi, baad me condition check hogi.
+
+Minimum ek baar body zarur chalegi.
+
+
+do {
+  // code to run
+} while (condition);
+
+
+
+
+let i = 0;
+do {
+  console.log("Value:", i);
+  i++;
+} while (i < 5);
+
+
+
+🎯 Important Points:
+Do-while ensures first execution without checking.
+
+
+
+🚀 4. for...of loop
+📖 Definition:
+Iterate karta hai iterables pe (like Arrays, Strings, etc.)
+
+
+for (let item of iterable) {
+  // code to run
+}
+
+
+let fruits = ["apple", "banana", "cherry"];
+
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+
+
+
+🎯 Important Points:
+Array, String, Set, Map ke elements ko easily iterate karne ke l
