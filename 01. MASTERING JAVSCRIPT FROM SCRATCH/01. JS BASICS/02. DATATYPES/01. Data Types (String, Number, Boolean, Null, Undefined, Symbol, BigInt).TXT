@@ -3,4 +3,108 @@ WHAT IS DATA TYPES ?
 DATA TYPES ARE THE WAY TO ECLARE THE TYPE OF DATA WE ARE GONNA USE.
 IT CAN BE NUMBER, STRING, BOLLEN, NULL, UNDEFINED ETC.
 
-TYPES 
+
+JavaScript Data Types (Primitive vs Non-Primitive)
+
+js data types define the kind of value a variable can hold 
+they are mainly categorized as Primitive and NOn primitive (Reference) types.
+
+
+🧮 2. Types of Data in JavaScript
+
+✅ Primitive Data Types (Immutable — value stored directly)
+
+Data Type | Example
+String | "hello"
+Number | 42, 3.14
+Boolean | true, false
+Null | null
+Undefined | undefined
+BigInt | 123n
+Symbol | Symbol("id")
+
+
+🧳 Non-Primitive / Reference Data Types (Mutable — stored as reference)
+
+Data Type | Example
+Object | { name: "Aman" }
+Array | [1, 2, 3]
+Function | function greet() {}
+Date, RegExp, etc. | 
+
+
+⚙️ 3. How It Works (Behind the Scenes)
+
+🧠 Primitive: Stored in the stack → direct value
+
+🧠 Reference: Stored in the heap → variable holds reference to memory
+
+let a = 10;
+let b = a;
+b = 20;
+console.log(a); // 10 (primitive - copied)
+
+let obj1 = { name: "Ram" };
+let obj2 = obj1;
+obj2.name = "Shyam";
+console.log(obj1.name); // "Shyam" (reference - same memory)
+
+
+🔍 4. typeof Operator (Used in Interviews)
+
+typeof "Hello"     // "string"
+typeof 123         // "number"
+typeof true        // "boolean"
+typeof undefined   // "undefined"
+typeof null        // "object" ❌ (JS quirk)
+typeof {}          // "object"
+typeof []          // "object"
+typeof function(){}// "function"
+
+
+🧪 5. Practice Task
+
+👉 Predict the output:
+
+let x;
+console.log(typeof x);
+
+let y = null;
+console.log(typeof y);
+
+
+✅ Output:
+
+undefined
+object  ❌ (surprising behavior in JS)
+
+
+⚠️ 6. Important Interview Notes
+ 
+ Null is deliberate empty value , Undefined means not assigned yet 
+ Array and functions are objects
+ use Array.isArray () to check if a variable is an array
+
+
+💡 7. Real-Life Example
+Imagine filling a form:
+
+Name = string
+
+Age = number
+
+Subscribed = boolean
+
+Email = undefined (left blank)
+
+Address = null (intentionally left empty)
+
+Skills = array of strings
+
+Profile = object of details
+
+
+🧠 8. Recap Line
+
+js data types help define what kind of data a variable hold 
+use type of and understand the difference between primitive and reference types 
