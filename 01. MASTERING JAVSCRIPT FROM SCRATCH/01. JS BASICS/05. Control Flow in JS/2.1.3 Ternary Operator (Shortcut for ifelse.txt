@@ -1,0 +1,29 @@
+2.1.3 Ternary Operator (Shortcut for if/else)
+
+it is a short form of if-else , we can take all decision in one line.
+
+
+🚀 Syntax
+
+condition ? trueValue : falseValue
+
+
+🛠 Practical Example
+
+let age = 20;
+
+let canVote = age >= 18 ? "Yes" : "No";
+console.log(canVote); 
+// Output: Yes
+
+
+💡 Real-world:
+Forms me "Submit" button disabled rahega jab tak valid input nahi milta? → Ternary ka best use.
+
+let isFormValid = true;
+let buttonStatus = isFormValid ? "Enabled" : "Disabled";
+
+
+🎯 Interview Tip:
+Nested Ternary se kabhi kabhi code confusing ho jaata hai. (Avoid in production)
+
