@@ -1,0 +1,19 @@
+Numbers in JavaScript
+
+🧠 1. Definition
+A Number in JavaScript represents both integer and floating-point values.
+
+let a = 42;
+let b = 3.14;
+
+
+Method | Example | Use
+toFixed(2) | 3.14159.toFixed(2) → "3.14" | Limit decimal places
+parseInt("42") | Converts string to integer | 
+parseFloat("3.14") | Converts string to float | 
+Number("42") | Converts to number | 
+isNaN("abc") | Checks if value is NaN | 
+Math.round() | Math.round(3.6) → 4 | Round to nearest integer
+Math.floor() | Math.floor(3.6) → 3 | Round down
+Math.ceil() | Math.ceil(3.1) → 4 | Round up
+Math.random() | Random number (0 to 1) | 
