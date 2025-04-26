@@ -1,0 +1,18 @@
+🚦 Control Flow in JavaScript
+
+
+Control flow means 
+
+Program ka kis Direction me fow hona chahie , kis condition pe kya kam hona chahiye ..ye decide karta hai ...
+
+simple shabdo me kaunse code block kab chalega yeh decide karna ho to ham  control floe use krte hai 
+
+
+🚦 Control Flow ko manage karne ke lie ham fir in sub topics ka use karte hai 
+ 
+  ↳ if, else, else if
+  ↳ Ternary operator
+  ↳ Logical operators (&&, ||)
+  ↳ Optional Chaining (?.)
+
+
