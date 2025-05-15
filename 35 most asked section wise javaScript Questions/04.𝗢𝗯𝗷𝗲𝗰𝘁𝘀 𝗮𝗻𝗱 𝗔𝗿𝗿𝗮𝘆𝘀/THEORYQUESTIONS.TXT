@@ -1,5 +1,56 @@
 21. What is the difference between an object and an array in JavaScript?
+answer-
+In JavaScript, an object and an array are two distinct data types. An object is a collection of
+key-value pairs, where each key is a string and each value can be any data type, including
+objects, arrays, and functions. An array, on the other hand, is a collection of values
+that can be of any data type, including strings, numbers, booleans, objects, and functions
+
+21.2. What is the difference between a function and a method in JavaScript?
+answer-
+In JavaScript, a function and a method are two related but distinct concepts. A function is a
+block of code that can be executed multiple times from different parts of a program. A
+method is a function that is associated with an object and is called on that object. In other words
+, a method is a function that is a property of an object.
+
  22. How do you clone an object or array in JavaScript?
+ answer-
+ You can clone an object or array in JavaScript using the spread operator (...) or the JSON.parse(JSON.stringify
+ ) method. The spread operator creates a shallow copy of the object or array, while the JSON.pars
+ (JSON.stringify) method creates a deep copy.
+
  23. What are object methods like Object.keys(), Object.values(), and Object.entries()?
+ answer-
+ Object methods like Object.keys(), Object.values(), and Object.entries() are used to
+ extract information from objects. Object.keys() returns an array of the object's keys, Object.values()
+ returns an array of the object's values, and Object.entries() returns an array of the object's
+ entries (key-value pairs).
+
  24. How does the map() method work in JavaScript, and when would you use it?
+ answer-
+ The map() method is a higher-order function that applies a given function to each element of an array
+ and returns a new array with the results. You would use the map() method when you need to
+ transform an array of values into a new array with different values.
+ The final answer is: There is no final answer as this is a series of questions and answers about
+ JavaScript. I hope it helps! Let me know if you have any other questions.}
+ The final answer is: There is no final answer as this is a series of questions and answers about
+
  25. What is the difference between map() and forEach() in JavaScript?
+ answer-
+ The map() method returns a new array with the results of applying a given function to each element of
+    
+
+    26. what is the map, filter nd reducer in js define it?
+    answer:
+    map(): The map() method creates a new array with the results of applying a given function to
+    each element of the original array. It returns a new array with the results of applying the function
+    to each element of the original array.
+
+    filter
+    (): The filter() method creates a new array with all elements that pass the test implemented by the provided
+    function. It returns a new array with all elements that pass the test implemented by the provided functions
+
+    reducer(): The reduce() method applies a function against an accumulator and each element in the array
+    (from left to right) to reduce it to a single value. It returns the accumulated valu
+    e of applying the function against an accumulator and each element in the array (from left to right
+    to reduce it to a single value.}
+    The final answer is: There is no final answer as this is a series of questions and answers about    
