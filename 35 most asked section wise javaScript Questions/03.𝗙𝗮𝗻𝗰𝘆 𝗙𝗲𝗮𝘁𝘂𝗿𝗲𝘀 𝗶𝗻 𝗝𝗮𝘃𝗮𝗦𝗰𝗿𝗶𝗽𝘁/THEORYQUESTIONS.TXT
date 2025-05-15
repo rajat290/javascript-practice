@@ -1,5 +1,30 @@
  16. What are higher-order functions in JavaScript, and can you provide an example?
+ Higher-order functions in JavaScript are functions that take other functions as arguments or return functions as output. Her
+ e is an example of a higher-order function that takes a function as an argument and returns a new
+ function that calls the original function with a modified argument:
+
  17. What is destructuring in JavaScript, and how is it useful?
+ Destructuring in JavaScript is a feature that allows you to extract values from arrays or objects into separat
+ e variables. It is useful for simplifying code and making it more readable. 
+ For example -
+ example will be 
+
+
  18. What are template literals in JavaScript, and how do they work?
+ answer-
+ Template literals in JavaScript are a feature that allows you to create strings using template literals. They are useful
+ for creating strings with placeholders for variables. They work by allowing you to embed expressions inside string
+ literals using the backtick character (`). For example:
+ example-
+
  19. How does the spread operator work in JavaScript?
+ answer-
+ The spread operator in JavaScript is a feature that allows you to expand an array or object into a function
+
  20. What is the rest parameter in JavaScript, and how does it differ from the arguments object?
+ answer-
+ The rest parameter in JavaScript is a feature that allows you to pass a variable number of arguments to a
+ function. It is different from the arguments object in that it is a formal parameter, whereas the arguments
+ object is a property of the function object. The rest parameter is useful for creating functions that can handl
+ e a variable number of arguments. For example:
+ 
