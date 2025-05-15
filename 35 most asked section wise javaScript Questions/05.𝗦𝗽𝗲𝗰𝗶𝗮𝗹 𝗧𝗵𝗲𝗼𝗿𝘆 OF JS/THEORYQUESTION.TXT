@@ -1,5 +1,14 @@
 26. What is event delegation in JavaScript, and why is it useful?
  27. What are JavaScript modules, and how do you import/export them?
  28. What is the prototype chain in JavaScript, and how does inheritance work?
+ answer-
+ 
  29. What is bind(), call(), and apply() in JavaScript, and when do you use them?
+
+ bind in js - The `bind()` method in JavaScript creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+
+ call keyword in js - The call() method is used to invoke a function with a specific 'this' context and pass arguments individually. For example, functionName.call(thisArg, arg1, arg2, ...).
+
+ apply keyword in js - The `apply()` method in JavaScript is used to invoke a function with a specific `this` context and an array of arguments. It is similar to `call()`, but instead of passing arguments individually, you pass them as an array.
+ 
  30. How does JavaScript handle equality comparisons with == and ===?
