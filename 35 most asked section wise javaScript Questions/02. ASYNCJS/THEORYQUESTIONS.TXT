@@ -1,5 +1,28 @@
 11. What is the difference between setTimeout() and setInterval()?
+setTimeout() and setInterval() are both used to execute a function after a specified time delay.
+ However,
+setTimeout() executes the function only once after the specified delay, 
+while setInterval() executes the function repeatedly atspecified intervals.
+
  12. How do JavaScript promises work, and what is the then() method?
+ JavaScript promises are used to handle asynchronous operations. The then() method is used to specify the function to
+ be executed when the promise is resolved or rejected.
+
+
  13. What is async/await, and how does it simplify asynchronous code in JavaScript?
+ Async/await is a syntax sugar for working with promises. It allows you to write asynchronous code that
+ looks and feels like synchronous code, making it easier to read and maintain.
+
  14. What are the advantages of using async functions over callbacks?
+ Async functions are easier to read and maintain than callbacks, and they provide better error handling and
+ cancellation support.
+
  15. How do you handle multiple promises simultaneously?
+ You can use Promise.all() to handle multiple promises simultaneously. It returns a promise that resolves when all
+ of the promises in the array have resolved, or rejects when any of the promises in the array hav
+ e rejected.
+
+ 16. what we can use in the place of promises?
+ We can use async/await in the place of promises. It is a syntax sugar for working with
+ promises and makes the code easier to read and maintain.
+ 
