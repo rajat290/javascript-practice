@@ -28,3 +28,4 @@
  object is a property of the function object. The rest parameter is useful for creating functions that can handl
  e a variable number of arguments. For example:
  
+ 21.
