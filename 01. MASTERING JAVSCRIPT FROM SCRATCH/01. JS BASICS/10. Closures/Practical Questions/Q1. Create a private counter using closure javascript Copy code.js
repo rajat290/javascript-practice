@@ -15,3 +15,11 @@ function createCounter() {
     console.log(counter.increment());// Output: 1       
     console.log(counter.decrement()); // Output: 0
 }
+
+
+// What's happening:
+// count is private inside createCounter
+
+// The returned function accesses it via closure
+
+// Each call to counter() increments count
