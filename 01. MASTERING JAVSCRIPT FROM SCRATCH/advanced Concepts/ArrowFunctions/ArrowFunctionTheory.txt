@@ -1,0 +1,20 @@
+Topic: Arrow Functions in JavaScript
+
+An arrow function is a shorter way to write a function 
+they don't bind their own this so they are usefull when we want to use the this from the surrounding context 
+
+suppose we are listing items in a cart 
+
+const cart = ["Shirt", "T-shrt" , "cap"];
+
+cart.forEach(item => {
+    console.log("item:", item );
+})
+
+Arrow function is used to loop through the array and log each item — clean, short, and readable.
+
+3. Real-life Use
+Writing short, inline functions in array methods like map, filter, reduce
+
+Automatically preserve this from outer scope (especially in classes, React components, etc.)
+Improves readability & reduces boilerplate
