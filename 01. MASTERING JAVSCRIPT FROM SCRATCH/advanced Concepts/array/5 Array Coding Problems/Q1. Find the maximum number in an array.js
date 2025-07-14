@@ -11,3 +11,10 @@ function findMax(arr) {
     }
 
     console.log(findMax(numbers));
+
+//     Explanation:
+// Start with max = first element
+
+// Loop through array, if any element is greater than max, update max
+
+// Return final value of max
