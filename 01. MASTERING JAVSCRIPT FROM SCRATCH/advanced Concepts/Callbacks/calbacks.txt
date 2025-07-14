@@ -1,0 +1,58 @@
+A callback is a function that is passed as an argument to another function and is called later, usually after some operation is completed .
+\
+
+
+2. Interview Line
+
+callbacks help us to manage operations that take some time like API call, File loading or user actions , instead of waiting, the main code continues and the callback runs once the job is done.
+
+
+3. Why It’s Used
+To handle asynchronous code (e.g., API calls, timers, events)
+
+To let functions be customized by passing behavior
+
+To run a function only after another has completed
+
+
+4. Daily Life Analogy
+Soch tu pizza order karta hai. Tera kaam khatam, ab pizza delivery boy jab pizza lekar aayega — vo tujhe call karega.
+
+That "call after work is done" = callback
+Jab kaam (pizza deliver) ho gaya, tab vo function (call) run hota hai.
+
+5. Technically How It Works
+
+function greet(name, callback) {
+    console.log(`Hello, ${name}!`);
+    callback();
+}
+greet("John", function() {
+    console.log("Callback executed!");  
+    });
+
+    6. Common Mistakes / Interview Traps
+     Mistake 1: Not passing function reference correctly
+     doSomething(callback()); // ❌ wrong – calls it immediately
+doSomething(callback);   // ✅ correct – passes it to run later
+
+
+
+Mistake 2: Not checking if callback is a function
+if (typeof callback === 'function') {
+    callback();
+    } else {
+        console.error('Callback is not a function');
+        }
+
+  Mistake 3: Thinking callbacks only work with async
+❗ No — callbacks work in both sync and async functions.      
+
+
+Trap Questions for Interview
+
+
+Q1: Can a callback be synchronous?
+A1: Yes, a callback can be synchronous. It doesn't have to be used with asynchronous
+
+Q2: What happens if I write callback() instead of passing callback?
