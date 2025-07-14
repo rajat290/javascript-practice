@@ -1,0 +1,73 @@
+Topic: Async and Await in JavaScript
+
+ Definition (Easy & Interview-Friendly)
+ =====================================
+Async and await are the keywords in javaScript , which are used to do asynchronous programming in a synchronous looking way ,
+
+They make promises easier to read and write .
+
+2. ✅ Interview Line (Memorize and Say)
+
+Using async await , i can pause the eexecution untia a promise resolves ,without blocking the main thread , it helps me write cleaner and easier - to - debug asynchronous code 
+
+3. ✅ Why It’s Used
+=====================================
+
+To wait for a promise to resolve before moving ahead
+
+To avoid .then() chaining (callback hell)
+
+To handle API calls, timers, file I/O, or anything async, in a readable way
+
+Makes debugging easier than using .then() or .catch()
+
+
+4. ✅ Daily Life Analogy
+=====================================
+Socho tu Zomato pe order karta hai.
+Tu chahta hai ki:
+"Khane ke aane ke baad hi khaana shuru karun."
+Yehi kaam await karta hai — vo function ruk jaata hai jab tak promise resolve na ho jaaye (yaani order aake deliver na ho jaaye).
+Jab khaana aa jaata hai → execution phir se chalu hoti hai.
+
+
+
+5. Syntax 
+=====================================
+async function getData() {
+    const result = await fetch(api.getdta.com/dumydata);
+    const data = await result.json();
+    return data;
+}
+
+ Behind the scenes:
+
+ 1. The function is marked as async, which means it can pause its execution and resume it later
+ 2. The await keyword is used to pause the execution of the function until the promise is resolved
+ 3. Once the promise is resolved, the execution of the function resumes and the result is returned
+
+ in short 
+ async function automatically returns a Promise
+
+await pauses the execution until the Promise resolves
+
+It does not block the main thread, it just makes the code wait logically
+
+6.  Tricky Interview Questions to Practice Verbally
+
+Q1: Can we use await inside a normal function?
+❌ No, await only works inside an async function.
+
+Q2: What does an async function return?
+✅ Always a Promise — even if you return a value.
+
+ Q3: Can we use multiple awaits in one function?
+✅ Yes, each one will pause until its promise resolves.
+
+Q4: Does await block the entire program?
+❌ No. It only pauses execution within the async function, not globally.
+
+Q5: What happens if we don’t use await before a promise?
+
+🔁 The function won’t wait — it will move ahead immediately with a pending promise.
+
