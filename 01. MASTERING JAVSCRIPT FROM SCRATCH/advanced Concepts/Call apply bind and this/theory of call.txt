@@ -1,0 +1,28 @@
+Topic: call() apply and bind in JavaScript?
+Answer: In JavaScript, `call()`, `apply()`, and `bind()` are methods that
+allow you to change the `this` keyword of a function, which can be useful
+for a variety of purposes, such as:
+* Calling a function with a different `this` context.
+* Passing arguments to a function.
+* Creating a new function with a specific `this` context.
+### Step 3: Explain the differences between call(), apply(), and bind() 
+* `call()` takes in arguments as individual parameters, allowing you to pass a variable number of arguments
+* `apply()` takes in an array of arguments, allowing you to pass a single array of values
+* `bind()` returns a new function with the specified `this` context and arguments, but does
+not immediately call the function
+### Step 4: Provide examples of using call(), apply(), and bind()
+
+
+The call() method in js is used to invoke a function with a specific value of this and individual arguments 
+
+call() is used to manually set the value of this when coding of a function , it  allows us e to borrow methods from other objects 
+
+2. Interview Line of Question: What is the difference between call() and apply()?
+difference between call and apply is 
+call() is used to invoke a function with a specific value of this and individual arguments
+apply() is used to invoke a function with a specific value of this and an array of arguments
+
+
+
+"If I want to run a function and explicitly control what this refers to, I use call()."
+"It’s useful when I want to borrow a function from one object and use it on another."
