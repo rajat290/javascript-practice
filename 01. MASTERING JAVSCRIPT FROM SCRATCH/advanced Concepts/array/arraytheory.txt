@@ -1,0 +1,22 @@
+In javaScript array is a data Structure , it is used to stored the multiple values in a single variable 
+where each element has an index which is sterting from 
+these values can be of any data type - numbers, strings, objects etc.
+
+
+ Real-life Example
+👜 Imagine a shopping cart:
+
+const cart = ["shirt", "t-shirts, "sunglasses"];
+
+this is an array that stores multiple items in one place 
+
+
+ Commonly used methods:
+
+push(), pop() — add/remove at end
+
+shift(), unshift() — add/remove at beginning
+
+splice(), slice() — insert/remove/select
+
+map(), filter(), reduce() — process array data
