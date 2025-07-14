@@ -56,3 +56,11 @@ Q1: Can a callback be synchronous?
 A1: Yes, a callback can be synchronous. It doesn't have to be used with asynchronous
 
 Q2: What happens if I write callback() instead of passing callback?
+It runs immediately instead of waiting — breaks async flow.
+
+Q3: Can I pass parameters to a callback?
+✅ Yes, using anonymous functions or arrow functions.
+greet("Rajat", () => sayBye("Later"));
+
+Q4: Are callbacks the same as Promises?
+❌ No. Callbacks came first. Promises are an improved way to handle async flows and errors.
