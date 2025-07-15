@@ -1,0 +1,92 @@
+Topic: Promises in JavaScript
+
+A promise in javaScript is an object that represents the future result either pass or fail of an async operation 
+
+“A Promise is a placeholder for a value that will be available later. It helps in handling asynchronous operations like API calls, file loads, etc.”
+
+ 2. Interview Line
+“Promises give us a cleaner and more manageable way to handle async code, avoiding callback hell. They have 3 states: pending, fulfilled, and rejected.”
+
+
+ 3. Why It’s Used
+To handle asynchronous operations
+
+To avoid callback hell / pyramid of doom
+
+To improve readability and error handling
+
+
+
+4. Daily Life Analogy
+Soch tu Swiggy pe order place karta hai.
+Tere haath me aata hai ek “Promise”:
+
+Order aayega ✅ (fulfilled)
+
+Cancel ho gaya ❌ (rejected)
+
+Abhi process me hai ⏳ (pending)
+
+ 5. Technically How It Works
+
+
+const myPromise = new Promise((resolve, reject) => {
+  let success = true;
+
+  if (success) {
+    resolve("Data received");
+  } else {
+    reject("Error occurred");
+  }
+});
+
+myPromise
+  .then((res) => console.log("Success:", res))
+  .catch((err) => console.log("Failed:", err));
+
+
+
+Breakdown:
+
+new Promise() returns a promise
+
+It takes a function with resolve and reject
+
+Based on logic, either one is called
+
+.then() handles success
+
+.catch() handles failure
+
+6. Common Mistakes / Interview Traps
+❌ Mistake 1: Thinking Promise runs synchronously
+It starts immediately but resolves asynchronously
+
+
+❌ Mistake 2: Not returning a value in .then()
+
+.then(res => {
+  console.log(res); // good
+})
+.then(x => console.log(x)); // x will be undefined unless previous return
+
+
+❌ Mistake 3: Forgetting .catch()
+Promises that fail without a .catch() → unhandled promise rejection
+
+
+
+✅ 7. Tricky Verbal Questions (Interview Traps)
+
+
+ Q1: How many states does a Promise have?
+3 — pending, fulfilled, rejected
+
+❓ Q2: Can you chain .then()?
+✅ Yes. Each .then() returns a new Promise.
+
+❓ Q3: What happens if I return a Promise from inside .then()?
+The outer .then() will wait for the inner one to resolve
+
+❓ Q4: What's the difference between Promise and async/await?
+async/await is just syntactic sugar built on top of Promises.
