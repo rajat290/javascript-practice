@@ -1,0 +1,38 @@
+Topic: fetch() in JavaScript
+
+ 1. Definition (Easy & Interview-Friendly)
+
+ fetch is built in js method used to mae htttp reuquests like get post to serve apis 
+ it returns a promise that resolves to the response 
+
+
+ fetch is used to make network requests and get from servers it return a promise which helps in handling async apis operations 
+
+
+ 2. Interview Line
+“fetch() is my go-to method to call REST APIs in JavaScript. It’s promise-based, and I often pair it with async/await for cleaner syntax.”
+
+
+ 3. Why It’s Used
+To get data from APIs (GET)
+
+To send data to server (POST, PUT, DELETE)
+
+To connect frontend with backend
+
+Works in all modern browsers
+
+4. Daily Life Analogy
+Soch tu Zomato pe click karta hai "My Orders".
+Tu expect karta hai ki Zomato server se tera data le aayega.
+
+Tere browser ne fetch() kiya hota hai background me server se.
+Jab data aata hai → dikhata hai.
+
+
+ 5. Technically How It Works
+
+ fetch("https://api.example.com/data")
+  .then(response => response.json()) // convert to usable format
+  .then(data => console.log(data))   // handle data
+  .catch(error => console.log(error)); // handle errors
