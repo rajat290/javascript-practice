@@ -90,3 +90,13 @@ The outer .then() will wait for the inner one to resolve
 
 ❓ Q4: What's the difference between Promise and async/await?
 async/await is just syntactic sugar built on top of Promises.
+
+
+
+| Concept      | Description                            |
+| ------------ | -------------------------------------- |
+| `resolve()`  | Call this when the task is successful  |
+| `reject()`   | Call this when the task fails          |
+| `.then()`    | Used to handle success                 |
+| `.catch()`   | Used to handle error                   |
+| `.finally()` | Runs no matter what (success or error) |
