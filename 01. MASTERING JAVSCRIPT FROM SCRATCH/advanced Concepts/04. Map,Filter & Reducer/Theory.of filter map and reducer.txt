@@ -1,0 +1,89 @@
+ Topic Set: map(), filter(), and reduce()
+
+ 1. Common Understanding
+Teeno functions array ke elements pe loop lagate hain
+
+Teeno original array ko mutate nahi karte (immutable hote hain)
+
+Teeno return karte hain ek naya value ya array\
+
+
+First: map()
+
+map() is used when  we want to transform each element of an array and get back a new array with the same length 
+
+ Use-Case / Real-Life Example
+Suppose tu ek shopping cart ke prices ko 18% GST ke saath update karna chahta hai:
+
+const prices = [100,200,300];
+const gst = 0.18;
+const updatedPrices = prices.map(price => price + (price * gst));
+console.log(updatedPrices); // [118, 236, 354]
+
+ What it returns?
+A new array of same length
+
+Each item is transformed
+
+ Common Interview Mistakes with map():
+Thinking it filters or reduces — ❌
+
+Not returning value from callback → gets undefined
+
+===============================================================================================================
+
+Second: filter()
+filter() is used when we want to get a new array with only the elements that pass a test
+
+filter() creates a new array by including only the elements that pass a certain condition 
+
+
+filter() is used when we want to extract a subset of data from an array based on a condition 
+
+Use-Case / Real-Life Example
+Tu ek array me se sirf even numbers chah raha hai:
+
+const number = [1,2,2,3,4,,5,6,,7,8,9,4,5];
+const evenNumbers = number.filter(num => num % 2 === 0);
+console.log(evenNumbers); // [2, 2, 4, 6,   ]
+
+ What it returns?
+A new array with fewer or equal items
+
+Items for which the condition is true
+
+ Common Mistakes:
+Using filter() when you need transformation → use map() instead
+
+===============================================================================================================
+
+
+Third: reduce()
+
+reduce() process all elemnents in an array and returns a single value like sum, average , object etc.
+
+
+
+reduce() is used to combine all elements of an array into a single result by applying a function step by step.
+
+
+ Use-Case / Real-Life Example
+Tu kisi shopping cart ka total price nikaal raha hai:
+
+const cart = [100, 200, 150];
+const totalPrice  = cart.reduce((acc, price ) =>  acc + price, 0);
+console.log(totalPrice); // 450
+
+How reduce() works?
+
+array.reduce((accumulator, currentValue) => {
+    return updatedAccumulator;
+}, initialValue);
+
+
+
+accumulator — result so far
+
+currentValue — current item in loop
+
+initialValue — starting value (must)
