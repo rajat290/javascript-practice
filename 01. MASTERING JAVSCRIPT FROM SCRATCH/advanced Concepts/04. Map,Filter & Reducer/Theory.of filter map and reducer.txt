@@ -87,3 +87,37 @@ accumulator — result so far
 currentValue — current item in loop
 
 initialValue — starting value (must)
+
+
+
+| Feature  | `map()`                 | `filter()`              | `reduce()`              |
+| -------- | ----------------------- | ----------------------- | ----------------------- |
+| Return   | New Array (same length) | New Array (fewer items) | Single Value (any type) |
+| Use for  | Transform items         | Select items            | Summarize/combine       |
+| Original | Doesn’t change original | Doesn’t change original | Doesn’t change original |
+| Example  | `arr.map(x => x * 2)`   | `arr.filter(x
+> const numbers = [1, 2, 3, 4, 5];
+> const doubleNumbers = numbers.map(x => x * 2);
+> console.log(doubleNumbers); // [2, 4, 6, 8,
+> const evenNumbers = numbers.filter(x => x % 2 === 0);
+> console.log(evenNumbers); // [2, 4]
+> const sum = numbers.reduce((acc, current) => acc + current, 0);
+> console.log(sum); // 15
+=============================================== 
+===============================================
+
+
+    Tricky Verbal Interview Questions
+    ===============================================
+    Q1. Can map() be used for filtering?
+❌ No. It transforms all values, doesn't skip anything.
+
+
+Q2. What if I return undefined inside map()?
+You’ll get an array of undefineds.
+
+Q3. Can reduce() return an array?
+✅ Yes — it can return anything you want.
+
+Q4. What's the difference between map() and forEach()?
+map() returns a new array; forEach() doesn’t return anything.
