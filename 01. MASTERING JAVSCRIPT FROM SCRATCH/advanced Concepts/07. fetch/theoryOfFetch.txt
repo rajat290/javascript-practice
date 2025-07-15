@@ -36,3 +36,75 @@ Jab data aata hai → dikhata hai.
   .then(response => response.json()) // convert to usable format
   .then(data => console.log(data))   // handle data
   .catch(error => console.log(error)); // handle errors
+
+
+
+ 6. Common Mistakes / Interview Traps
+
+
+⚠️ Mistake 1: Thinking fetch() fails on 404
+fetch("bad-url")
+  .then(res => {
+    if (!res.ok) throw new Error("Not Found");
+    return res.json();
+  });
+  
+🧠 fetch() only fails on network error, not HTTP errors like 404 — tu khud .ok check karein.
+
+
+  ⚠️ Mistake 2: Forgetting to return .
+fetch(url).then(res => res.json()).then(data => ...)
+
+
+.json() is also async — tu use karna hi padega!
+
+⚠️ Mistake 3: Not using await properly
+const res = await fetch(url); // ✅
+const data = await res.json(); // ✅
+const result = await data; // ❌
+
+ 7. Tricky Interview Questions
+1. How do you handle CORS issues with fetch?
+to handle CORS issue with fetch
+fetch(url, {
+    mode: 'cors',
+    credentials: 'include',
+    })
+    2. How do you handle 404 errors with fetch?
+    fetch(url)
+    .then(res => {
+        if (!res.ok) throw new Error("Not Found");
+        return res.json();
+        });
+        3. How do you handle network errors with fetch?
+        fetch(url)
+        .catch(error => console.log(error)); // handle errors
+        4. How do you handle JSON parsing errors with fetch?
+        fetch(url)
+        .then(res => res.json())
+        .catch(error => console.log(error)); // handle errors
+        5. How do you handle server-side errors with fetch?
+        fetch(url)
+        .then(res => {
+            if (!res.ok) throw new Error("Server Error");
+            return res.json();
+            });
+        .catch(error => console.log(error)); // handle errors
+        6. How do you handle authentication with fetch?
+        fetch(url, {
+            headers: {
+                'Authorization': 'Bearer ' + token
+                }
+                })
+                7. How do you handle rate limiting with fetch?
+                fetch(url, {
+                    headers: {
+                        'X-RateLimit-Limit': '100',
+                        'X-RateLimit-Remaining': '50'
+                        }
+                        })
+
+                        Q8: What does fetch() return?
+                        fetch() returns a Promise that resolves to the Response object.
+                        Q9: What is the difference between fetch() and XMLHttpRequest?
+                        fetch() is a modern API that returns a Promise, while XMLHttpRequest is an older API that returns
