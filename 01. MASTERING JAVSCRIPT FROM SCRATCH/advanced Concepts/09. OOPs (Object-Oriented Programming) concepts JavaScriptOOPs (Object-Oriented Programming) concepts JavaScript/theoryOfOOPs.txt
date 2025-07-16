@@ -30,3 +30,91 @@ Yaad rakhne ka shortcut:
 
  💡 Real-life Analogy:
 Car — gear change karne ka function hai, par andar gearbox kaise kaam karta hai tu nahi dekhta.
+
+2️⃣ Abstraction – “Chhupa lena details ko”
+
+✅ Easy Definition:
+Hiding of internal details and showing only necessary information to the outside world
+
+it means in abstraction we hide complex implementation and showing only the necessary details to user
+
+🧠 Interview line:
+Abstraction means hiding internal logic and showing only required  functionalities 
+
+
+💡 Real-life Analogy:
+TV remote control — tu remote control ka interface dekh sakta hai, par TV ke internal circuit kya hain tu nahi pata.
+
+function fetchData() {
+  // Abstracted logic
+  console.log("Fetching data from API...");
+  // Behind the scenes: fetch(), then(), error handling etc.
+}
+
+
+Yahan tu fetchData() use karta hai bina jaane andar ka logic.
+
+
+3️⃣ Inheritance – “Parent-child ka rishta”
+
+✅ Easy Definition:
+A class can inherit properties and methods from another class using extends keyword.
+
+🧠 Interview line:
+Inheritance is a mechanism in which one class can inherit the properties and behavior of another class.
+
+it means  by using Inheritance we can create new classes from existing ones and reuse their functionality 
+
+
+💡 Real-life Analogy:
+Child inherits traits from parents — like height, surname, etc.
+
+✅ JavaScript Example:
+
+class Animal {
+  speak() {
+    console.log("Animal speaks");
+  }
+}
+
+class Dog extends Animal {
+  bark() {
+    console.log("Dog barks");
+  }
+}
+
+const d = new Dog();
+d.speak(); // Inherited from Animal
+d.bark();  // Own method
+
+
+4️⃣ Polymorphism – “Same name, different behavior”
+
+✅ Easy Definition:
+
+same function name behaves diferently based on the context (overriding or overloading)
+
+🧠 Interview line:
+
+polymorphism allows methods to have different fors or behaviours on object context 
+
+💡 Real-life Analogy:
+same word can have different meanings based on the context (e.g., bank can be a financial institution
+or a riverbank)
+
+
+✅ Common Interview Questions on OOP (Verbal Style)
+❓ Q1: Can JavaScript do full OOP like Java?
+It supports most OOP principles via class/prototype system, but not strictly typed like Java.
+
+❓ Q2: What’s the difference between class and constructor function?
+Class is syntactic sugar introduced in ES6, under the hood it still uses prototypes like constructor functions.
+
+❓ Q3: How is private data handled in JS?
+Using closure or #privateField (ES2022).
+
+❓ Q4: Can we achieve abstraction in JS?
+Yes, by hiding inner implementation inside functions or modules.
+
+❓ Q5: What is prototype inheritance?
+JavaScript objects can inherit from other objects using the prototype chain.
