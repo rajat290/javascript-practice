@@ -1,0 +1,162 @@
+ JavaScript OOPs Extended Concepts
+
+ 🔷 1. Classes in JavaScript
+--------------------------------
+In JavaScript, classes are defined using the `class` keyword. A class is a blueprint or a
+template that defines the properties and methods of an object.
+
+in short a class is a blue print for creating objects 
+it can contan constructor , properties  and methods 
+
+
+🧠 Interview line:
+“A class defines the structure and behavior of objects in OOP, and helps us follow encapsulation and reusability.”
+
+
+syntax example 
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+
+const p1 = new Person("Rajat", 25);
+p1.greet(); // Hello, my name is Rajat
+
+
+
+✅ Real-life Analogy:
+
+Class is like a cookie cutter, and objects created from it are cookies.
+Ek class se multiple objects ban sakte hain.
+
+🔷 2. Constructor
+
+--------------------------------
+A constructor is a special method in a class that is called when an object is created from it.
+
+🧠 Interview line:
+“The constructor is used to initialize properties when an object is created from a class.”
+
+✅ Example:
+class Car {
+  constructor(brand, year) {
+    this.brand = brand;
+    this.year = year;
+  }
+
+  details() {
+    console.log(`${this.brand} - ${this.year}`);
+  }
+}
+
+const c1 = new Car("Tesla", 2023);
+c1.details(); // Tesla - 2023
+
+
+🧠 Constructor always runs first when you use new ClassName().
+
+🔷 3. Static Methods
+--------------------------------
+
+A static method belongs to the class itself , not to objects created from it 
+
+🧠 Interview line:
+“Static methods are used when functionality is independent of object instances.”
+
+Example
+class MathUtil {
+  static add(a, b) {
+    return a + b;
+  }
+}
+
+console.log(MathUtil.add(5, 3)); // 8
+
+
+You don’t need to create an object to call static methods.
+
+Used for utility functions.
+
+ Real-life Analogy:
+Static methods are like remote controls that work directly with the TV (class), not each person (object) using it.
+
+
+🔷 4. Private Fields (#) and Getters/Setters
+📌 Definition
+# is used to declare truly private fields in JS classes (ES2022+)
+
+get and set control access to private/protected data
+
+✅ Example:
+js
+Copy code
+class BankAccount {
+  #balance = 0; // private field
+
+  constructor(name) {
+    this.name = name;
+  }
+
+  deposit(amount) {
+    if (amount > 0) this.#balance += amount;
+  }
+
+  get balance() {
+    return this.#balance;
+  }
+}
+
+const acc = new BankAccount("Rajat");
+acc.deposit(1000);
+console.log(acc.balance); // 1000
+🧠 This is true encapsulation — no outside code can access #balance directly.
+
+🔷 5. Inheritance (with extends and super())
+Already covered earlier, but quick recap:
+
+js
+Copy code
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    console.log(`${this.name} makes a sound`);
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, breed) {
+    super(name); // call parent constructor
+    this.breed = breed;
+  }
+
+  speak() {
+    console.log(`${this.name} barks`);
+  }
+}
+✅ Bonus: Summary of JS OOP Concepts You Now Know
+Concept	Keyword(s)	Purpose
+Class	class	Blueprint to create objects
+Object	new Class()	Instance of a class
+Constructor	constructor	Auto-runs when object is created
+Inheritance	extends, super()	Share logic from parent to child
+Encapsulation	#private, closures	Hide data and protect logic
+Abstraction	Functions, classes	Hide internal logic
+Polymorphism	Method overriding	Different behavior for same method name
+Static Methods	static	Belongs to class, not instances
+Getters/Setters	get, set	Controlled property access
+
+✅ Practice Tasks (Mastery Check)
+🧠 Q1: Create a User class with private password using #, and method checkPassword()
+🧠 Q2: Create a class Shape and extend it to Circle and Square with overridden methods
+🧠 Q3: Add a static method compareAge() to a Person class
+🧠 Q4: Use getter/setter to manage temperature in Celsius and Fahrenheit
+🧠 Q5: Create a Product class with method discountedPrice() and use encapsulation for #basePrice
