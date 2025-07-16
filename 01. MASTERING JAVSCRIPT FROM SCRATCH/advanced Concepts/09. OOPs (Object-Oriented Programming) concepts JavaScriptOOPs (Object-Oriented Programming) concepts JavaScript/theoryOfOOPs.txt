@@ -1,0 +1,32 @@
+OOPs (Object-Oriented Programming) concepts JavaScript
+
+ What is OOP?
+ oops is a way of writting code where we structure programs using objects, which bundle data ( properties) and behaviour ( methods) together .
+
+  Interview line:
+
+  oops help in organizing code using reusable , maintainable objetcs and which is based on real world modeling 
+
+
+ JavaScript me OOP kaise hota hai?
+
+JS is not a class-based language originally — it's prototype-based.
+But from ES6, we have class, constructor, extends, etc. which make OOP feel just like Java, C++, etc.
+
+JS supports all the OOPs concepts like encapsulation, inheritance, polymorphism, etc.
+
+4 Pillars of OOP in JavaScript
+Yaad rakhne ka shortcut:
+"A PIE" → Abstraction, Polymorphism, Inheritance, Encapsulation
+
+
+1️⃣ Encapsulation – “Data ko pack karna”
+
+✅ Easy Definition:
+ Building of data and methods inside a single unit object or class 
+
+🧠 Interview line:
+ Encapsulation keeps code organized and prevents access to sensitive data 
+
+ 💡 Real-life Analogy:
+Car — gear change karne ka function hai, par andar gearbox kaise kaam karta hai tu nahi dekhta.
