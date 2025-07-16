@@ -1,0 +1,84 @@
+Topic: Reference Types in JavaScript
+
+
+✅ 1. Definition (Easy & Interview-Friendly)
+In JavaScript, reference types are values that are not stored directly in the variable but are stored by reference (i.e., memory address).
+
+🧠 Interview line:
+
+“Reference types like objects, arrays, and functions are not copied by value but by reference — meaning changes affect the original.”
+
+✅ 2. Daily Life Analogy
+Soch:
+
+Tere paas ek original passport hai.
+Tu uska Xerox (copy) de sakta hai (primitive).
+Lekin agar tu kisi ko original file ka link de de (reference), to agar vo file me change kare, vo change sab jagah dikhega.
+
+Primitive type = Xerox copy
+Reference type = Shared Google Drive file link
+
+
+✅ 3. Why It’s Used
+Efficient memory usage (objects/arrays/functions are heavy)
+
+Required for complex data structures
+
+Enables shared state (e.g., Redux store, React props, etc.)
+
+
+✅ 4. Examples of Reference Types
+
+// Object
+const user = { name: "Rajat" };
+
+// Array
+const marks = [80, 90, 70];
+
+// Function
+function greet() {
+  console.log("Hello!");
+}
+
+
+✅ 5. Technical Working (How Reference Type Works)
+
+const a = { name: "Rajat" };
+const b = a;
+
+b.name = "Tomar";
+
+console.log(a.name); // Tomar ✅
+
+🔍 Explanation:
+
+a and b point to same object in memory
+
+Changing b.name actually changes original object → affects a too
+
+ 6. Primitive vs Reference (Quick Table)
+
+ | Feature     | Primitive Type          | Reference Type                  |
+| ----------- | ----------------------- | ------------------------------- |
+| Stored as   | Actual value            | Reference (memory address)      |
+| Copied by   | Value                   | Reference                       |
+| Examples    | number, string, boolean | object, array, function         |
+| Independent | Yes                     | No (they share the same object) |
+
+
+
+✅ 7. Common Mistakes / Interview Traps
+
+❌ Mistake 1: Expecting const to freeze objects
+const user = { name: "Rajat" };
+user.name = "Tomar"; // ✅ allowed (object is mutable)
+
+
+
+❌ Mistake 2: Copying arrays/objects without cloning
+
+const arr1 = [1, 2, 3];
+const arr2 = arr1;
+
+arr2.push(4);
+console.log(arr1); // [1, 2, 3, 4] ❗
