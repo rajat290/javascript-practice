@@ -1,0 +1,94 @@
+Destructuring in JavaScript
+Destructuring is a feature in JavaScript that allows you to extract values from arrays and objects into distinct
+variables. It's a shorthand way to assign values to variables from arrays or objects.
+
+
+Destructuring is a JavaScript feature that lets you unpack values from arrays or objects into individual variables — in a clean, short way.
+
+
+✅ 2. Why It’s Used
+
+Cleaner and shorter code (especially for nested data).
+
+Avoids repetitive object.key or array[index] syntax.
+
+Helpful in React for accessing props or state.
+
+
+✅ 3. Real Life Example
+Imagine getting a delivery box of items (fruits), and you pick them out directly into your hands — rather than opening and searching one by one.
+
+
+✅ 4. Array Destructuring 🧱
+🔸 Basic
+js
+Copy code
+const arr = [1, 2, 3];
+const [a, b, c] = arr;
+console.log(a, b, c); // 1 2 3
+🔸 Skipping Values
+js
+Copy code
+const arr = [10, 20, 30];
+const [x, , z] = arr;
+console.log(x, z); // 10 30
+🔸 With Default Values
+js
+Copy code
+const [a = 100, b = 200] = [10];
+console.log(a, b); // 10 200
+✅ 5. Object Destructuring 🔓
+🔸 Basic
+js
+Copy code
+const user = { name: "Rajat", age: 25 };
+const { name, age } = user;
+console.log(name, age); // Rajat 25
+🔸 Rename While Destructuring
+js
+Copy code
+const { name: username } = user;
+console.log(username); // Rajat
+🔸 Default Value
+js
+Copy code
+const { role = "user" } = user;
+console.log(role); // user
+✅ 6. Nested Destructuring 🧩
+js
+Copy code
+const person = {
+  name: "Ankit",
+  address: {
+    city: "Delhi",
+    pin: 110011
+  }
+};
+
+const {
+  address: { city, pin }
+} = person;
+
+console.log(city); // Delhi
+✅ 7. Destructuring in Function Parameters 🔥
+js
+Copy code
+function greet({ name, age }) {
+  console.log(`Hello ${name}, age ${age}`);
+}
+
+const user = { name: "Ravi", age: 28 };
+greet(user); // Hello Ravi, age 28
+✅ 8. Destructuring with Rest Operator
+js
+Copy code
+const numbers = [1, 2, 3, 4, 5];
+const [first, ...rest] = numbers;
+console.log(first); // 1
+console.log(rest);  // [2, 3, 4, 5]
+js
+Copy code
+const user = { id: 1, name: "Sam", age: 30 };
+const { name, ...rest } = user;
+console.log(name); // Sam
+console.log(rest); // { id: 1, age: 30 }
