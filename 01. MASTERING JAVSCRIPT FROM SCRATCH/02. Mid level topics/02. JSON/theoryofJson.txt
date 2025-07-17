@@ -1,0 +1,73 @@
+Topic 2: JSON (JavaScript Object Notation)
+
+JSON is a lightweight data format used to store and exchange data , especially between a clien t (browser) and a server (API) , it looks like a js object but is in string format.
+
+JSON is used to store data in a structured format, it is easy to read and write, and
+it is language independent.
+
+✅ 2. Interview Line
+JSON is a lightweight data format used to store and exchange data between a client and a server.
+
+
+JSON is the standard format for APIs to send and receive data between frontend and backend in a readable and structured way.
+
+
+✅ 3. Why It’s Used
+
+To exchange data between systems in a universal format.
+
+Works across all programming languages, not just JavaScript.
+
+Super lightweight and human-readable.
+
+Used heavily in APIs and databases like MongoDB.
+
+
+ 4. Daily Life Analogy
+Think of JSON like a Google Form submission — when you fill it, the form sends your info (name, email, etc.) to Google in a fixed structured format — that's what JSON does with your data.
+
+✅ 5. Technically How It Works
+
+JSON Format Looks Like
+
+{
+  "name": "Rajat",
+  "age": 25,
+  "skills": ["JavaScript", "React"]
+}
+
+
+✅ But remember: It’s a string, not a real object.
+
+
+
+📥 Converting JSON to JavaScript Object
+
+
+let jsonStr = '{"name":"Rajat","age":25}';
+let jsObj = JSON.parse(jsonStr);  // JSON → Object
+console.log(jsObj.name); // Rajat
+
+
+📤 Converting JavaScript Object to JSON
+
+let obj = { name: "Rajat", age: 25 };
+let json = JSON.stringify(obj);   // Object → JSON
+console.log(json); // '{"name":"Rajat","age":25}'
+
+
+ 6. Common Mistakes / Interview Traps
+
+ ❗Trap 1: Is JSON a data type in JS?
+❌ No, it’s a string format (even though it looks like an object).
+
+❗Trap 2: Can you put comments in JSON?
+❌ No. JSON does not allow comments. It’s strict.
+
+❗Trap 3: Difference between JSON.stringify() and JSON.parse()?
+stringify: Converts Object → JSON string
+
+parse: Converts JSON string → Object
+
+❗Trap 4: Can functions or undefined be in JSON?
+❌ No. JSON only supports text, numbers, booleans, null, arrays, and objects. No functions or undefined.
