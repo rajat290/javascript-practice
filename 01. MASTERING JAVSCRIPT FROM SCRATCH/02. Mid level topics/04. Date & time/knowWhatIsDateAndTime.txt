@@ -1,0 +1,89 @@
+Topic 4: Date and Time in JavaScript
+
+✅ 1. Easy & Interview-Friendly Definition
+
+JavaScript provides the built-in Date object to work with dates and times — like current time, day, year, and even timestamps.
+
+✅ 2. Why It’s Used
+
+To show the current time or date (blogs, chats, reports).
+
+To compare two dates (e.g. subscription end).
+
+To format readable time for users.
+
+To schedule tasks (like countdowns or reminders).
+
+✅ 3. Real Life Example
+
+Just like checking your mobile clock/calendar — JavaScript's Date does the same job in your website/app.
+
+✅ 4. Create a Date
+
+let now = new Date() // Current date & time
+console.log(now) // prints the current date and time
+
+✅ 5. Common Methods of Date
+
+| Method          | Description                      |
+| --------------- | -------------------------------- |
+| `getFullYear()` | Gets the year (e.g. 2025)        |
+| `getMonth()`    | Gets month (0–11) → Jan = 0      |
+| `getDate()`     | Gets day of the month            |
+| `getDay()`      | Day of week (0 = Sunday)         |
+| `getHours()`    | Gets current hour                |
+| `getMinutes()`  | Gets minutes                     |
+| `getSeconds()`  | Gets seconds                     |
+| `getTime()`     | Timestamp (ms since Jan 1, 1970) |
+
+
+✅ Example
+
+let d = new Date();
+
+console.log("Year:", d.getFullYear());
+console.log("Month:", d.getMonth() + 1); // +1 since it's 0-based
+console.log("Date:", d.getDate());
+console.log("Hours:", d.getHours());
+console.log("Minutes:", d.getMinutes());
+console.log("Seconds:", d.getSeconds());
+
+
+✅ 6. Format Date as String
+
+let today = new Date();
+let formatted = today.toDateString(); // e.g. "Sun Jul 13 2025"
+let time = today.toLocaleTimeString(); // e.g. "10:12:33 AM"
+console.log(formatted, time);
+
+
+✅ 7. Create Custom Date
+
+let birthday = new Date("2000-04-15"); 
+console.log(birthday.toDateString());
+
+
+✅ 8. Compare Dates
+
+let start = new Date("2025-01-01");
+let end = new Date("2025-12-31");
+
+if (start < end) {
+  console.log("Start is before end");
+}
+
+
+✅ 9. Timestamp
+
+let timestamp = Date.now(); 
+console.log(timestamp); // e.g. 1750000123000 (ms)
+
+
+✅ 10. Bonus Tip: Countdown Example
+
+let newYear = new Date("2026-01-01").getTime();
+let now = Date.now();
+let gap = newYear - now;
+
+let days = Math.floor(gap / (1000 * 60 * 60 * 24));
+console.log(`Days left for New Year: ${days}`);
