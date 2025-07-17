@@ -1,0 +1,86 @@
+Topic 5: Event Listeners in JavaScript
+
+✅ 1. Easy & Interview-Friendly Definition
+
+An Event listener is a function that waits for an event like click hover and keypress to happpen on a specific element and then execute a block og code in response 
+
+
+2. Why It’s Used
+
+Event listeners are used to execute a block of code in response to a specific event. They are commonly
+used in web development to handle user interactions such as clicks, hovers, and key presses.
+
+To make your page interactive (buttons, forms, modals).
+
+To respond to user actions like clicks or typing.
+
+Core feature of dynamic behavior in front-end apps.
+
+✅ 4. Syntax of addEventListener()
+
+element.addEventListener("event", function);
+
+
+✅ Example: Button click
+
+<button id="myBtn">Click me</button>
+
+document.getElementById("myBtn").addEventListener("click", function () {
+  alert("Button was clicked!");
+});
+
+
+✅ 5. Common Events You Can Listen For
+
+| Event       | Triggered When...         |
+| ----------- | ------------------------- |
+| `click`     | Element is clicked        |
+| `mouseover` | Mouse hovers over element |
+| `mouseout`  | Mouse leaves element      |
+| `keydown`   | Key is pressed            |
+| `keyup`     | Key is released           |
+| `submit`    | Form is submitted         |
+| `change`    | Input value changes       |
+| `load`      | Page or image loads       |
+
+
+
+✅ 6. Arrow Function Version
+
+myBtn.addEventListener("click", () => {
+  console.log("Arrow clicked!");
+});
+
+
+✅ 7. Separate Function Handler
+
+function handleClick() {
+  console.log("Separate function used");
+}
+
+myBtn.addEventListener("click", handleClick);
+
+
+✅ 8. Removing Event Listeners
+
+function greet() {
+  alert("Hello!");
+  btn.removeEventListener("click", greet); // removes after 1st click
+}
+
+btn.addEventListener("click", greet);
+
+
+✅ 9. Multiple Listeners on Same Element
+
+let btn = document.getElementById("multiBtn");
+
+btn.addEventListener("click", () => console.log("Clicked!"));
+btn.addEventListener("mouseover", () => console.log("Hovered!"));
+
+
+✅ 10. Event Object Access (e or event)
+
+btn.addEventListener("click", function (e) {
+  console.log("You clicked at:", e.clientX, e.clientY);
+});
