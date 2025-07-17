@@ -1,0 +1,41 @@
+Control Flow in JavaScript
+
+
+✅ 1. Easy & Interview-Friendly Definition
+
+control flow in js referes to the order in which the executed line by line based on conditions , loops or function calls.
+
+
+✅ 2. Why It’s Used
+
+To control how and when certain blocks of code run.
+
+Helps make decisions (if-else), repeat actions (loops), or stop execution (break, return).
+
+Core part of writing logic — every real-world app uses it.
+
+
+✅ 3. Types of Control Flow (with Syntax Examples)
+
+🔹 1. Conditional Statements
+🔹 2. Switch Statement
+🔹 3. Loops (For, While, Do-While)
+🔹 4. Functions (Function Declarations, Function Expressions)
+🔹 5. Try-Catch Blocks
+6. break and continue
+7. return
+
+
+✅ 4. Real Life Analogy
+
+Like traffic signals — red (stop), green (go), yellow (maybe wait) — JS control flow tells your code when to stop, skip, loop, or jump based on logic.
+
+
+✅ 5. Summary Table
+
+| Control Type      | Keywords Used                     |
+| ----------------- | --------------------------------- |
+| Conditional       | `if`, `else if`, `else`, `switch` |
+| Loops             | `for`, `while`, `do while`        |
+| Jump/Decision     | `break`, `continue`, `return`     |
+| Execution Control | function calls                    |
