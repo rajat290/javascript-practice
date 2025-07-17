@@ -1,0 +1,120 @@
+All Conditions in JavaScript
+
+✅ 1. Official & Easy Definition
+Conditions in JavaScript are expressions that evaluate to either true or false and help in making decisions using control flow.
+
+
+✅ 2. Why They’re Used
+To make decisions based on certain criteria.
+
+Without conditions, your code would always follow the same path.
+
+Real-world example: If user is logged in, show dashboard. Else, show login screen.
+
+✅ 3. All Common Types of Conditions in JS
+
+
+🔹 1. Basic if, else if, else
+
+let age = 18;
+if (age < 18) {
+  console.log("Minor");
+} else if (age === 18) {
+  console.log("Just turned adult");
+} else {
+  console.log("Adult");
+}
+
+
+🔹 2. Ternary Operator (? :)
+
+A short-hand for if...else
+
+let score = 80;
+let grade = score >= 80 ? "A" : "B";
+console.log(grade); // Outputs: A
+
+
+🔹 3. Switch Case
+
+Used when comparing one value against multiple possible cases:
+
+let day = "Monday";
+
+switch (day) {
+  case "Monday":
+    console.log("Start of the week");
+    break;
+  case "Friday":
+    console.log("Weekend vibes!");
+    break;
+  default:
+    console.log("Midweek grind");
+}
+
+
+🔹 4. Logical Operators in Conditions
+
+
+| Operator | Meaning         | Example                  |                  |               |   |            |
+| -------- | --------------- | ------------------------ | ---------------- | ------------- | - | ---------- |
+| `&&`     | AND (both true) | `if (age > 18 && hasID)` |                  |               |   |            |
+| \`       |                 | \`                       | OR (either true) | \`if (isAdmin |   | isOwner)\` |
+| `!`      | NOT (negation)  | `if (!isLoggedIn)`       |                  |               |   |            |
+
+
+if (isLoggedIn && hasToken) {
+  console.log("Access granted");
+}
+
+
+🔹 5. Falsy & Truthy Conditions
+
+JS treats these as false in conditionals
+
+false, 0, "", null, undefined, NaN
+
+
+Everything else is truthy
+
+let name = "";
+if (name) {
+  console.log("Welcome, user");
+} else {
+  console.log("No name provided");
+}
+
+
+🔹 6. Optional Chaining (?.) + Nullish Coalescing (??)
+
+let user = { name: "Rajat", address: null };
+
+// Optional chaining
+console.log(user.address?.city); // undefined (safe)
+
+// Nullish coalescing
+let location = user.address?.city ?? "Default City";
+console.log(location); // "Default City"
+
+
+
+✅ 4. Summary Table
+
+| Type              | Syntax Example                |   |                |
+| ----------------- | ----------------------------- | - | -------------- |
+| if                | `if (x > 10)`                 |   |                |
+| else if / else    | `else if (x < 5)`, `else`     |   |                |
+| ternary           | `x > 5 ? "Yes" : "No"`        |   |                |
+| switch            | `switch (value) { case ... }` |   |                |
+| logical AND       | `if (x > 5 && y < 10)`        |   |                |
+| logical OR        | \`if (isAdmin                 |   | isModerator)\` |
+| logical NOT       | `if (!loggedIn)`              |   |                |
+| falsy/truthy      | `if (input)`                  |   |                |
+| optional chaining | `user?.profile?.name`         |   |                |
+| nullish           | `value ?? "default"`          |   |                |
+
+
+
+✅ 5. Real-Life Analogy
+Like real life:
+"If it rains, take umbrella. Else if it's sunny, wear glasses. Else stay inside."
