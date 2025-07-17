@@ -1,0 +1,90 @@
+ Rest Operator (...rest) and Spread Operator (...spread)
+
+ ✅ 1. Official & Easy Definition
+
+
+ rest operator collects multiple elements into a single array. 
+ the spread operator expands elements from an array or object into individual parts 
+
+ ✅ 2. Why They’re Used (Real-Life Analogy)
+
+ | Operator Real-LifeAnalogy                                             |
+| -------- | ------------------------------------------------------------- |
+| Rest     | Jam-packed tiffin: sab chhoti chhoti cheezen ek box mein (📦) |
+| Spread   | Tiffin khol diya — sab items ko plate mein nikal diya (🍽️)   |
+
+✅ 3. Syntax and Code Examples
+
+🔹 Rest Operator (... in function params or destructuring)
+
+Used when you want to collect the remaining values.
+
+function sum(...numbers) {
+  return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+
+console.log(sum(1, 2, 3, 4)); // Output: 10
+
+
+💡 Use Case: When you don’t know how many arguments will be passed.
+
+
+With Object Destructuring
+
+const { name, ...rest } = { name: "Rajat", age: 25, city: "Delhi" };
+console.log(name); // Rajat
+console.log(rest); // { age: 25, city: "Delhi" }
+
+
+
+🔹 Spread Operator (... in function calls, arrays, or objects)
+Used when you want to expand the elements of an array or object into individual parts.
+const numbers = [1, 2, 3, 4, 5];
+const doubleNumbers = [...numbers, 6, 7, 8];
+console.log(doubleNumbers); // Output: [1, 2, 3, 4,]
+
+
+with objects
+
+const user = { name: "Rajat", age: 25 };
+const updatedUser = { ...user, city: "Delhi" };
+
+console.log(updatedUser);
+// { name: "Rajat", age: 25, city: "Delhi" }
+
+
+With Function Calls
+
+const numbers = [4, 7, 1];
+console.log(Math.max(...numbers)); // 7
+
+
+✅ 4. Concepts Used
+
+Function parameters
+
+Object and Array destructuring
+
+Shallow copy of arrays/objects
+
+Immutability (React ke liye zaroori)
+
+✅ 5. Real-World Use Cases
+
+| Use Case                         | Operator |
+| -------------------------------- | -------- |
+| Combine multiple arrays          | Spread   |
+| Clone object or array            | Spread   |
+| Pass array as function arguments | Spread   |
+| Get remaining function args      | Rest     |
+| Get remaining object properties  | Rest     |
+
+
+✅ 6. Quick Summary Table
+
+
+| Use                            | Operator | Position                          |
+| ------------------------------ | -------- | --------------------------------- |
+| Combine/Clone                  | Spread   | Anywhere in code                  |
+| Pass multiple args to function | Spread   | Inside function call              |
+| Collect remaining values       | Rest     | Inside parameter or destructuring |
