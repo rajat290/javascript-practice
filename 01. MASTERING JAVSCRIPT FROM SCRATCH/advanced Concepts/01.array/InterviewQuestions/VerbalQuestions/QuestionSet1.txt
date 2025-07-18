@@ -1,0 +1,17 @@
+1. What is the difference between array.length = 0 and array = []?
+
+Answer:
+
+array.length = 0 empties the existing array in-place (same reference remains).
+
+array = [] creates a new array, replacing the old reference.
+
+🔥 In-place vs new reference — important in closures or shared memory.
+
+2. Are arrays in JavaScript objects?
+
+Answer:
+Yes, arrays are special types of objects.
+They have numeric indexes and a length property.
+
+typeof [] === "object" returns true. Use Array.isArray() to check accurately.
