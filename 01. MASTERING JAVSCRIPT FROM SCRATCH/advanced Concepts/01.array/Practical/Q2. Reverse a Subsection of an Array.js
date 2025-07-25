@@ -17,3 +17,7 @@ console.log(upperCaseNames); // Output: ["RAJAT", "VIVEK", "KOMAL"]
 // Har name ko toUpperCase() method se convert kiya capital letters me.
 
 // Result me har name capital form me ek naye array me store ho gaya.
+
+//  Summary:
+// Is question me humne seekha ki array ke har element ko transform kaise karte hain using map().
+// Ye pattern data formatting, display customization, aur bulk updates ke liye real-world me kaafi useful hai.
